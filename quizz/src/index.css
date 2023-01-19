@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -14,4 +15,89 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+  width: 550px;
+  height: 550px;
+  background-color: #f5f7fb;
+  margin: 0 auto;
+}
+
+.App .top-shape {
+  position: absolute;
+  right: -20%;
+  top: -38%;
+  transform: rotate(-128.49deg);
+  width: 297px;
+  height: 235px;
+  background-color: #fffad1;
+  border-radius: 29% 71% 71% 29% / 45% 51% 49% 55%;
+}
+
+.App .bottom-shape {
+  position: absolute;
+  bottom: -20%;
+  left: -30%;
+  width: 297px;
+  height: 235px;
+  background-color: #deebf8;
+  border-radius: 61% 39% 33% 67% / 49% 56% 44% 51%;
+}
+
+.start--main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 550px;
+  height: 550px;
+}
+
+.start--main h2 {
+  color: #293264;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.start--main p {
+  margin-top: 20px;
+  color: #293264;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.start--main button {
+  margin-top: 20px;
+  width: 193px;
+  height: 52px;
+  border-style: none;
+  background-color: #4d5b9e;
+  border-radius: 15px;
+  color: #f5f7fb;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.qustions--main {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.qustions--main .question {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.question--main .aswers {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
 }
