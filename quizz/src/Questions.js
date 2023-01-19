@@ -26,7 +26,9 @@ export default function Questions() {
 
   const questionElements = quizzList.map((item) => {
     const answerElements = item.answers.map((answer, index) => (
-      <span key={index}>{answer}</span>
+      <span className="choice" key={index}>
+        {answer}
+      </span>
     ));
 
     return (
@@ -38,7 +40,7 @@ export default function Questions() {
   });
   return (
     <div className="qustions--main">
-      <main>{questionElements}</main>
+      <main className="questions--list">{questionElements}</main>
       <div>
         <button>Check answers</button>
       </div>
